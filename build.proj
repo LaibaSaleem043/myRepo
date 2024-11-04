@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.Build.Traversal">
+  <ItemGroup>
+    <ProjectReference Include="eng\service.proj">
+      <AdditionalProperties Condition="'$(Scope)' != ''">Scope=$(Scope)</AdditionalProperties>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
